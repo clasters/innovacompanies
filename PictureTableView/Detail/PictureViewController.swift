@@ -4,7 +4,6 @@ import UIKit
 class PictureViewController: UIViewController {
     
     var picture: Picture?
-    var textFieldRealYPosition: CGFloat = 0.0
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var urlTF: UITextField!
@@ -23,16 +22,11 @@ class PictureViewController: UIViewController {
         
         urlTF.delegate = self
         urlTF.inputView = UIView() 
-   
-      
-
-       
+// TODO  
 //        NotificationCenter.default.addObserver(self, selector: #selector(PictureViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
 //        NotificationCenter.default.addObserver(self, selector: #selector(PictureViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
 
-
     }
-
     
 }
 
